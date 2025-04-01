@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frida Objetos Deco - Mates Pintados a Mano</title>
+  <meta name="description" content="Mates de algarrobo pintados a mano. Únicos, coloridos y con mucho amor. Frida Objetos Deco.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="min-h-screen bg-amber-100">
+    <!-- Hero Section -->
+    <section class="hero relative overflow-hidden py-16">
+      <div class="decorative-elements absolute inset-0 z-0 opacity-10">
+        <div class="absolute top-10 left-10 h-20 w-20 rounded-full bg-red-500"></div>
+        <div class="absolute top-40 right-20 h-16 w-16 rounded-full bg-emerald-500"></div>
+        <div class="absolute bottom-20 left-1/4 h-24 w-24 rounded-full bg-amber-500"></div>
+        <div class="absolute bottom-40 right-1/3 h-12 w-12 rounded-full bg-teal-500"></div>
+      </div>
+      <div class="container relative z-10 mx-auto flex flex-col items-center px-4 text-center">
+        <div class="mb-8 w-64 md-w-80">
+          <img 
+            src="img/logo_2.png" 
+            alt="Frida Objetos Deco" 
+            class="h-auto w-full"
+          />
+        </div>
+        <h1 class="font-serif text-4xl font-bold text-amber-900 md-text-5xl lg-text-6xl">
+          Arte en cada mate
+        </h1>
+        <p class="mt-4 max-w-2xl text-lg text-amber-800">
+          Mates pintados a mano de algarrobo. Únicos, coloridos y con mucho amor.
+        </p>
+        <a 
+          href="#productos" 
+          class="mt-8 rounded-full bg-red-600 px-8 py-3 font-medium text-white transition-colors hover-bg-red-700"
+        >
+          Ver productos
+        </a>
+      </div>
+      <div class="wave-divider absolute bottom-0 left-0 right-0 h-16">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="h-full w-full">
+          <path 
+            fill="#FEF3C7" 
+            fill-opacity="1" 
+            d="M0,128L48,144C96,160,192,192,288,186.7C384,181,480,139,576,138.7C672,139,768,181,864,181.3C960,181,1056,139,1152,122.7C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="bg-amber-100 py-16">
+      <div class="container mx-auto px-4">
+        <div class="mb-12 text-center">
+          <h2 class="relative inline-block font-serif text-3xl font-bold text-amber-900 md-text-4xl">
+            Nuestros Mates
+            <span class="section-underline"></span>
+          </h2>
+          <p class="mt-4 text-amber-800">
+            Cada pieza es única y está pintada a mano con dedicación y amor
+          </p>
+        </div>
+        
+        <div class="relative mx-auto max-w-4xl">
+          <div class="product-grid">
+            <div class="product-card mb-8 w-full max-w-xs md-mb-0">
+              <div class="overflow-hidden rounded-lg bg-white p-4 shadow-md transition-transform hover-scale-105">
+                <div class="relative h-64 w-full overflow-hidden rounded-lg">
+                  <img 
+                    src="img/flyer.png" 
+                    alt="Mates pintados a mano" 
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="mt-4 text-center">
+                  <h3 class="font-serif text-xl font-semibold text-amber-900">Colección Floral</h3>
+                  <p class="mt-2 text-amber-800">Mates decorados con motivos florales en diversos colores</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="product-card w-full max-w-xs">
+              <div class="overflow-hidden rounded-lg bg-white p-4 shadow-md transition-transform hover-scale-105">
+                <div class="relative h-64 w-full overflow-hidden rounded-lg">
+                  <img 
+                    src="img/flyer_2.png" 
+                    alt="Mates Personalizados" 
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="mt-4 text-center">
+                  <h3 class="font-serif text-xl font-semibold text-amber-900">Diseños Personalizados</h3>
+                  <p class="mt-2 text-amber-800">Creamos diseños únicos según tus preferencias</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-amber-50 py-16">
+      <div class="container mx-auto px-4">
+        <div class="about-container">
+          <div class="about-text">
+            <h2 class="relative inline-block font-serif text-3xl font-bold text-amber-900 md-text-4xl">
+              Sobre Frida
+              <span class="section-underline"></span>
+            </h2>
+            <p class="mt-6 text-amber-800">
+              En Frida Objetos Deco, creamos piezas únicas de arte funcional. Nuestros mates de algarrobo son pintados a mano con diseños inspirados en la naturaleza y el arte popular latinoamericano.
+            </p>
+            <p class="mt-4 text-amber-800">
+              Cada mate es una pieza única, elaborada con materiales de calidad y pintada con colores vibrantes que resisten el uso diario.
+            </p>
+            <p class="mt-4 text-amber-800">
+              Nuestro objetivo es llevar arte y color a tu rutina diaria, convirtiendo el momento de tomar mate en una experiencia especial.
+            </p>
+          </div>
+          
+          <div class="about-image relative w-full max-w-md">
+            <div class="overflow-hidden rounded-lg bg-white p-3 shadow-lg">
+              <div class="relative aspect-square w-full overflow-hidden rounded-lg">
+                <img 
+                  src="img/logo.png" 
+                  alt="Frida Objetos Deco" 
+                  class="object-cover w-full h-full"
+                />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="bg-amber-100 py-16">
+      <div class="container mx-auto px-4">
+        <div class="text-center">
+          <h2 class="relative inline-block font-serif text-3xl font-bold text-amber-900 md-text-4xl">
+            Síguenos en Instagram
+            <span class="section-underline"></span>
+          </h2>
+          <p class="mt-4 text-amber-800">
+            Descubre todas nuestras creaciones y novedades
+          </p>
+          
+          <a 
+            href="https://www.instagram.com/frida.objetosdeco/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="instagram-button mt-6 inline-flex items-center gap-2 rounded-full px-8 py-3 font-medium text-white transition-transform hover-scale-105"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+            </svg>
+            @frida.objetosdeco
+          </a>
+        </div>
+        
+        <div class="instagram-grid mt-12">
+          <div class="instagram-item aspect-square overflow-hidden rounded-lg bg-amber-50">
+            <div class="flex h-full items-center justify-center p-4">
+              <p class="text-center text-sm text-amber-600">Imagen de Instagram</p>
+            </div>
+          </div>
+          <div class="instagram-item aspect-square overflow-hidden rounded-lg bg-amber-50">
+            <div class="flex h-full items-center justify-center p-4">
+              <p class="text-center text-sm text-amber-600">Imagen de Instagram</p>
+            </div>
+          </div>
+          <div class="instagram-item aspect-square overflow-hidden rounded-lg bg-amber-50">
+            <div class="flex h-full items-center justify-center p-4">
+              <p class="text-center text-sm text-amber-600">Imagen de Instagram</p>
+            </div>
+          </div>
+          <div class="instagram-item aspect-square overflow-hidden rounded-lg bg-amber-50">
+            <div class="flex h-full items-center justify-center p-4">
+              <p class="text-center text-sm text-amber-600">Imagen de Instagram</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-amber-50 py-16">
+      <div class="container mx-auto px-4">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="relative inline-block font-serif text-3xl font-bold text-amber-900 md-text-4xl">
+            Contacto
+            <span class="section-underline"></span>
+          </h2>
+          <p class="mt-4 text-amber-800">
+            ¿Interesado en nuestros productos? ¡Contáctanos!
+          </p>
+          
+          <div class="contact-grid mt-8">
+            <div class="contact-item rounded-lg bg-white p-6 shadow-md">
+              <div class="flex items-center justify-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon text-red-500">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span class="text-amber-900">+54 9 11 4062-4792</span>
+              </div>
+            </div>
+            
+            <div class="contact-item rounded-lg bg-white p-6 shadow-md">
+              <div class="flex items-center justify-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon text-red-500">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                <span class="text-amber-900">frida.objetosdeco@gmail.com</span>
+              </div>
+            </div>
+            
+            <div class="contact-item-full rounded-lg bg-white p-6 shadow-md">
+              <div class="flex items-center justify-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon text-red-500">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span class="text-amber-900">Buenos Aires, Argentina</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-8">
+            <a 
+              href="https://wa.me/5491140624792" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="whatsapp-button inline-flex items-center gap-2 rounded-full bg-emerald-600 px-8 py-3 font-medium text-white transition-colors hover-bg-emerald-700"
+            >
+              Contactar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 py-8 text-amber-100">
+      <div class="container mx-auto px-4">
+        <div class="footer-container">
+          <div class="text-center md-text-left">
+            <h3 class="font-serif text-xl font-bold">Frida Objetos Deco</h3>
+            <p class="mt-1 text-sm text-amber-200">Mates pintados a mano con amor</p>
+          </div>
+          
+          <div class="social-links">
+            <a 
+              href="https://www.instagram.com/frida.objetosdeco/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="social-link rounded-full bg-amber-800 p-2 transition-colors hover-bg-amber-700"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+              <span class="sr-only">Instagram</span>
+            </a>
+            <a 
+              href="mailto:frida.objetosdeco@gmail.com" 
+              class="social-link rounded-full bg-amber-800 p-2 transition-colors hover-bg-amber-700"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <span class="sr-only">Email</span>
+            </a>
+            <a 
+              href="https://wa.me/5491112345678" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="social-link rounded-full bg-amber-800 p-2 transition-colors hover-bg-amber-700"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span class="sr-only">WhatsApp</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="mt-6 text-center text-sm text-amber-300">
+          <p>© <span id="current-year"></span> Frida Objetos Deco. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
